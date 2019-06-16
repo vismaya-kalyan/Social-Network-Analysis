@@ -1,0 +1,57 @@
+Summary
+
+
+Collection
+
+Number of users collected: 2
+jordanbpeterson 
+joerogan 
+
+Number of tweets fetched by jordanbpeterson 3035
+Number of tweets fetched by joerogan 2185
+Number of tweets collected including jordanbpeterson in them 100
+Number of tweets collected including joerogan in them 100
+
+
+Clustering
+
+jordanbpeterson
+
+graph has 1172 nodes and 1759 edges
+
+Number of users collected: 834
+
+Number of messages collected: 1210
+
+Number of communities detected: 28
+
+Average number of users in each community: 41.857142857142854
+
+joerogan
+
+graph has 1530 nodes and 2698 edges
+
+Number of users collected: 1033
+
+Number of messages collected: 1247
+
+Number of communities detected: 26
+
+Average number of users in each community: 58.84615384615385
+
+
+
+Classification
+
+
+Number of instance belonging to jordanbpeterson (3035, 5)
+Number of instance belonging to joerogan (2185, 5)
+fold 0 accuracy=0.8075
+fold 1 accuracy=0.8238
+fold 2 accuracy=0.8285
+fold 3 accuracy=0.8113
+fold 4 accuracy=0.818
+Results:
+The data from both the users are combined, preprocessed, shufield.
+A logistic regression is used to predict which tweet belongs to which user
+test accuracy=0.8178 (0.00) train accuracy=0.8649 (0.00)

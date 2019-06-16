@@ -1,0 +1,8 @@
+Number of users collected: 2
+jordanbpeterson 
+joerogan 
+
+Number of tweets fetched by jordanbpeterson 3035
+Number of tweets fetched by joerogan 2185
+Number of tweets collected including jordanbpeterson in them 100
+Number of tweets collected including joerogan in them 100

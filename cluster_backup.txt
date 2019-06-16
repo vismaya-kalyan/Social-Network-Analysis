@@ -1,0 +1,24 @@
+jordanbpeterson
+
+graph has 1172 nodes and 1759 edges
+
+Number of users collected: 834
+
+Number of messages collected: 1210
+
+Number of communities detected: 28
+
+Average number of users in each community: 41.857142857142854
+
+joerogan
+
+graph has 1530 nodes and 2698 edges
+
+Number of users collected: 1033
+
+Number of messages collected: 1247
+
+Number of communities detected: 26
+
+Average number of users in each community: 58.84615384615385
+

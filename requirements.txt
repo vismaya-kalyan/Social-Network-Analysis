@@ -1,0 +1,19 @@
+# place any necessary python libraries here, one per line, to be installed with pip install -r requirements.txt. See https://pip.readthedocs.io/en/1.1/requirements.html
+
+tweepy 
+csv
+TwitterAPI
+sys
+time
+json
+pandas
+numpy
+re
+string
+sklearn
+collections
+preprocessor
+math
+networkx
+itertools
+matplotlib
