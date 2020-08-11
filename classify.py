@@ -25,7 +25,7 @@ from sklearn.metrics import accuracy_score
 
 
 def preprocess(user_df):
-    # '#' not included to save the space.
+    
     punctuations = '!"$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
     regex = re.compile('[%s]' % re.escape(punctuations))
     regexb=re.compile('b[\'\"]')
@@ -35,8 +35,8 @@ def preprocess(user_df):
     for index, tweet in user_df.iterrows():                
         twe = p.clean(tweet['text'])         # remove urls, reserved, emoji, smiley, mention
         twe = twe.lower()          # lower
-        twe = regexb.sub('', twe)  # remove punctuations
-        twe = regex.sub('', twe)   # remove quotes 
+        twe = regexb.sub('', twe)  # remove quotes  
+        twe = regex.sub('', twe)   # remove punctuations
         arr.append(twe)
 
     user_df.insert(3, "pre_processed", arr) 
@@ -48,7 +48,6 @@ def show(user_df):
     # We can use the TfidfVectorizer to find ngrams for us
     vect = TfidfVectorizer(ngram_range=(2,5), stop_words='english')
 
-    # Pulls all of trumps tweet text's into one giant string
     summaries = "".join(user_df['text'])
     ngrams_summaries = vect.build_analyzer()(summaries)
     # print(user_df)
