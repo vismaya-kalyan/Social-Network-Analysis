@@ -56,14 +56,14 @@ def show(user_df):
 
 def get_true_labels(tweets):
     """Return a *numpy array* of ints for the true sentiment labels of each file.
-    1 means positive, 0 means negative. Use the name of the file to determine
+    1 means joerogan, 0 means jordanbpeterson. Use the name of the author to determine
     the true label.
     Params:
-        file_names....a list of .txt file paths, e.g., data/train/pos/10057_9.txt
+        list of tweets
     Returns:
-        a numpy array of 1 or 0 values corresponding to each element
-        of file_names, where 1 indicates a positive review, and 0
-        indicates a negative review.
+        a numpy array of 1 or 0 values corresponding to each 
+        tweet, where 1 indicates a joerogan, and 0
+        indicates jordanbpeterson.
     """
     return np.array([1 if 'joerogan' in f else 0 for f in tweets['author']])
 
